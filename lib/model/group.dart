@@ -8,7 +8,7 @@ class Group {
   final List<String> memberIds;
   final String user_id;
   final DateTime timestamp;
-  final String statusOfApproved; // Added statusOfApproved field
+  final String statusOfApproved;
 
   Group({
     required this.grp_id,
@@ -31,7 +31,7 @@ class Group {
       memberIds: List<String>.from(data['member_ids'] ?? []),
       user_id: data['user_id'] ?? '',
       timestamp: (data['timestamp'] as Timestamp).toDate(),
-      statusOfApproved: data['statusOfApproved'] ?? false, // Default to false if not provided
+      statusOfApproved: data['statusOfApproved'] ?? false, 
     );
   }
 
