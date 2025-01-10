@@ -99,7 +99,7 @@ class _ShowIndivReportState extends State<ShowIndivReport> {
                                   RichText(
                                     text: TextSpan(
                                       text: 'Status: ',
-                                      style: const TextStyle(color: Colors.grey), // Base style for "Status:"
+                                      style: const TextStyle(color: Colors.grey), 
                                       children: [
                                         TextSpan(
                                           text: individual.statusOfApproved == 'true' || individual.statusOfApproved.toLowerCase() == 'approved'
@@ -108,7 +108,7 @@ class _ShowIndivReportState extends State<ShowIndivReport> {
                                           style: TextStyle(
                                             color: individual.statusOfApproved == 'true' || individual.statusOfApproved.toLowerCase() == 'approved'
                                                 ? Colors.green
-                                                : Colors.orange, // Color for "Approved" or "Pending"
+                                                : Colors.orange, 
                                             fontWeight: FontWeight.bold,
                                           ),
                                         ),
