@@ -72,10 +72,10 @@ class _SplashScreenState extends State<SplashScreen> {
   Future<void> _checkUserStatus() async {
     User? user = FirebaseAuth.instance.currentUser;
 
-    // Delay navigation to ensure the current frame is rendered first
-    await Future.delayed(const Duration(seconds: 1)); // Optionally add a delay for smoother transitions
+    
+    await Future.delayed(const Duration(seconds: 1)); 
 
-    // If the user is not signed in, navigate to SignInScreen
+   
     if (user == null) {
       Navigator.pushReplacementNamed(context, SignInScreen.id);
     } else {
@@ -90,7 +90,7 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Center(
         child: CircularProgressIndicator(
             valueColor: AlwaysStoppedAnimation<Color>(kButtonTextColor)
-        ), // Show a loading indicator while checking
+        ), 
       ),
     );
   }
