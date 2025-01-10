@@ -1,9 +1,9 @@
 import 'dart:io';
 import 'package:flood_management_system/screens/report_indiv_scan_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:flood_management_system/component/constant.dart'; // Ensure this file includes your color constants
+import 'package:flood_management_system/component/constant.dart'; 
 import 'package:image_picker/image_picker.dart';
-import 'package:google_mlkit_text_recognition/google_mlkit_text_recognition.dart'; // Add text recognition package
+import 'package:google_mlkit_text_recognition/google_mlkit_text_recognition.dart'; 
 import 'package:google_mlkit_document_scanner/google_mlkit_document_scanner.dart';
 
 class Scan extends StatefulWidget {
@@ -24,7 +24,7 @@ class ScanState extends State<Scan> {
   @override
   void initState() {
     super.initState();
-    imagePicker = ImagePicker(); // Initialize ImagePicker
+    imagePicker = ImagePicker(); 
   }
 
   // Pick image from the gallery
@@ -35,7 +35,7 @@ class ScanState extends State<Scan> {
         image = File(pickedFile.path);
       });
       // After selecting image, scan it
-      await performTextRecognize(image!); // Directly pass the 'image' file
+      await performTextRecognize(image!); 
     }
   }
 
@@ -126,17 +126,17 @@ class ScanState extends State<Scan> {
       }
 
       // Extract birthday from IC number's first 6 digits
-      String icYearStr = icNumber.substring(0, 2); // Extract the year part from the IC number (YY)
+      String icYearStr = icNumber.substring(0, 2); 
       int icYear = int.parse(icYearStr);
 
-      int currentYearLastTwoDigits = int.parse(DateTime.now().year.toString().substring(2, 4)); // Get current year’s last two digits
+      int currentYearLastTwoDigits = int.parse(DateTime.now().year.toString().substring(2, 4)); 
       String birthday;
 
       // Determine century based on the IC number’s year part
       if (icYear <= currentYearLastTwoDigits) {
-        birthday = '20$icYearStr'; // Year is between 00 and the current year’s last two digits, add "20"
+        birthday = '20$icYearStr'; 
       } else {
-        birthday = '19$icYearStr'; // Year is above current year’s last two digits, add "19"
+        birthday = '19$icYearStr'; 
       }
 
       // Construct the full birthday in DD/MM/YYYY format
