@@ -41,53 +41,51 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyC2K-8XhD4GmMXIMlNnYP4vFpy_0Vp3nJA',
-    appId: '1:103372056660:web:73532014d439d8c12925c1',
-    messagingSenderId: '103372056660',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
     projectId: 'fmsdb-e4283',
-    authDomain: 'fmsdb-e4283.firebaseapp.com',
-    storageBucket: 'fmsdb-e4283.firebasestorage.app',
-    measurementId: 'G-PP79VLBEYH',
+    authDomain: '',
+    storageBucket: '',
+    measurementId: '',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAGvDaqtg-nkA0JWcuRiorsNhUcfUzW6yM',
-    appId: '1:103372056660:android:f29274f131c036102925c1',
-    messagingSenderId: '103372056660',
-    projectId: 'fmsdb-e4283',
-    storageBucket: 'fmsdb-e4283.firebasestorage.app',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
+    projectId: '',
+    storageBucket: 'p',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDlO0xVAcH1aERCPJUTLUDo_wPK2SAZPWc',
-    appId: '1:103372056660:ios:25c5546ccea51d2d2925c1',
-    messagingSenderId: '103372056660',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
     projectId: 'fmsdb-e4283',
-    storageBucket: 'fmsdb-e4283.firebasestorage.app',
-    androidClientId: '103372056660-ks1rj9uc5rnfh85abivchgm986o7caev.apps.googleusercontent.com',
-    iosClientId: '103372056660-a2n27oknl503d7lehf4e5lb97cab8e1r.apps.googleusercontent.com',
-    iosBundleId: 'com.example.floodManagementSystem',
+    authDomain: '',
+    storageBucket: '',
+    measurementId: '',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyC2K-8XhD4GmMXIMlNnYP4vFpy_0Vp3nJA',
-    appId: '1:103372056660:web:262807c1c3b118982925c1',
-    messagingSenderId: '103372056660',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
     projectId: 'fmsdb-e4283',
-    authDomain: 'fmsdb-e4283.firebaseapp.com',
-    storageBucket: 'fmsdb-e4283.firebasestorage.app',
-    measurementId: 'G-Z85BTDYZ5V',
+    authDomain: '',
+    storageBucket: '',
+    measurementId: '',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyDlO0xVAcH1aERCPJUTLUDo_wPK2SAZPWc',
-    appId: '1:103372056660:ios:25c5546ccea51d2d2925c1',
-    messagingSenderId: '103372056660',
+   apiKey: '',
+    appId: '',
+    messagingSenderId: '',
     projectId: 'fmsdb-e4283',
-    storageBucket: 'fmsdb-e4283.firebasestorage.app',
-    androidClientId: '103372056660-ks1rj9uc5rnfh85abivchgm986o7caev.apps.googleusercontent.com',
-    iosClientId: '103372056660-a2n27oknl503d7lehf4e5lb97cab8e1r.apps.googleusercontent.com',
-    iosBundleId: 'com.example.floodManagementSystem',
+    authDomain: '',
+    storageBucket: '',
+    measurementId: '',
   );
 
 }
