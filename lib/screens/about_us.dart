@@ -46,7 +46,7 @@ class _AboutUsScreenState extends State<AboutUsScreen> {
 
       // Scrollable body content using SingleChildScrollView
       body: SingleChildScrollView(
-        padding: EdgeInsets.all(20.0), // Optional padding for spacing
+        padding: EdgeInsets.all(20.0), 
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
