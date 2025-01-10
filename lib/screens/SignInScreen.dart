@@ -94,7 +94,7 @@ class _SignInScreenState extends State<SignInScreen> {
                     ],
                   ),
                   onPressed: () {
-                    signup(context); // Corrected this line by adding braces for the function call
+                    signup(context);
                   },
                 ),
               ),
