@@ -41,13 +41,13 @@ class _ShowMemberDetailScreenState extends State<ShowMemberDetailScreen> {
       // Try to fetch the file
       final result = await storageRef.getDownloadURL();
       setState(() {
-        qrImageUrl = result; // If found, set the URL
-        _isQRCodeSaved = true; // Mark that the QR code is already saved
+        qrImageUrl = result; 
+        _isQRCodeSaved = true; 
       });
     } catch (e) {
       print("QR code doesn't exist for this group: $e");
       setState(() {
-        _isQRCodeSaved = false; // QR code not found
+        _isQRCodeSaved = false; 
       });
     }
   }
@@ -151,7 +151,7 @@ class _ShowMemberDetailScreenState extends State<ShowMemberDetailScreen> {
                     });
                   }),style: ElevatedButton.styleFrom(
                   foregroundColor: Colors.white,
-                  backgroundColor: kWeatherTextColor, // Set the color of the text
+                  backgroundColor: kWeatherTextColor,
                 ),
                   child: const Text('Get QR Code'),
                 ),
@@ -235,9 +235,9 @@ class _ShowMemberDetailScreenState extends State<ShowMemberDetailScreen> {
 
 class QRCodeUploader {
   final BuildContext context;
-  final String grpId; // Add grpId as a parameter
+  final String grpId;
 
-  QRCodeUploader(this.context, this.grpId); // Modify the constructor to accept grpId
+  QRCodeUploader(this.context, this.grpId); 
 
   Future<void> saveQRImage(String data, Function(String) onUploadSuccess) async {
     try {
