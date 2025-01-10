@@ -50,7 +50,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
     return Tooltip(
       message: text,  // Tooltip message that will be displayed on long press
       padding: const EdgeInsets.all(8.0),
-      verticalOffset: 20,  // Adjust the distance of the tooltip above the icon
+      verticalOffset: 20,  
       decoration: BoxDecoration(
         color: Colors.black.withOpacity(0.7),
         borderRadius: BorderRadius.circular(4),
