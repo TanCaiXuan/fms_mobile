@@ -18,7 +18,7 @@ class ReportFloodScreen extends StatefulWidget {
 
 class _ReportFloodScreenState extends State<ReportFloodScreen> {
   final _auth = FirebaseAuth.instance;
-  final int _page = 1; // Ensure the correct initial page index
+  final int _page = 1;
   final LogOut _logout = LogOut();
 
   @override
@@ -49,7 +49,7 @@ class _ReportFloodScreenState extends State<ReportFloodScreen> {
               ),
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
-                child: SingleChildScrollView( // Added to make the content scrollable
+                child: SingleChildScrollView( 
                   child: Column(
 
                     children: [
@@ -89,7 +89,7 @@ class _ReportFloodScreenState extends State<ReportFloodScreen> {
                               ),
                               child: const Center(
                                 child: Padding(
-                                  padding: EdgeInsets.only(top: 20.0), // Adjusted top padding
+                                  padding: EdgeInsets.only(top: 20.0), 
                                   child: Text(
                                     "Group",
                                     style: kTitleStyle,
@@ -122,7 +122,7 @@ class _ReportFloodScreenState extends State<ReportFloodScreen> {
                                   MaterialPageRoute(builder: (context) => const ReportIndividualScreen()));
                             },
                             child: Container(
-                              padding: const EdgeInsets.all(8.0), // Padding around the content
+                              padding: const EdgeInsets.all(8.0), 
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(10.0),
                                 image: DecorationImage(
@@ -136,7 +136,7 @@ class _ReportFloodScreenState extends State<ReportFloodScreen> {
                               ),
                               child: const Center(
                                 child: Padding(
-                                  padding: EdgeInsets.only(top: 20.0), // Adjusted top padding
+                                  padding: EdgeInsets.only(top: 20.0), 
                                   child: Text(
                                     "Individual",
                                     style: kTitleStyle,
@@ -148,7 +148,7 @@ class _ReportFloodScreenState extends State<ReportFloodScreen> {
                           ),
                         ),
                       ),
-                      const SizedBox(height: 45), // Space after the last card
+                      const SizedBox(height: 45),
                     ],
                   ),
                 ),
