@@ -7,7 +7,7 @@ import 'package:flood_management_system/screens/ShowMemberDetailScreen.dart';
 
 
 class ShowIndivReport extends StatefulWidget {
-  static String id = 'report_indiv_screen';
+  static String id = 'show_indiv_screen';
 
   const ShowIndivReport({super.key});
 
